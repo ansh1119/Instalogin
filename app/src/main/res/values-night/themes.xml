@@ -18,7 +18,7 @@
         <item name="android:background">#000</item>
     </style>
 
-    <style name="TEXT">
+    <style name="signup">
         <item name="android:textColor">#FFFFFF</item>
         <item name="android:background">#000</item>
     </style>

@@ -8,12 +8,12 @@
     tools:context=".MainActivity">
 
     <TextView
-        android:id="@+id/textView"
-        style="@style/TEXT"
+        android:id="@+id/logo"
+        style="@style/signup"
         android:layout_width="332dp"
         android:layout_height="70dp"
         android:fontFamily="@font/billabong"
-        android:text="Instagram"
+        android:text="@string/instagram"
         android:textAlignment="center"
         android:textSize="55dp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -24,33 +24,32 @@
         app:layout_constraintVertical_bias="0.276" />
 
     <EditText
-        android:id="@+id/editTextTextPersonName"
+        android:id="@+id/username"
         style="@style/editText"
         android:layout_width="350dp"
         android:layout_height="48dp"
         android:layout_marginTop="24dp"
-        android:background="@drawable/roundstyle"
         android:ems="10"
-        android:hint="Phone number, email or username"
+        android:hint="@string/phone_number_email_or_username"
         android:inputType="textPersonName"
+        android:background="@drawable/roundstyle"
         android:padding="10dp"
-        android:textColor="#FFF"
         android:textSize="15dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.508"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:layout_constraintTop_toBottomOf="@+id/logo"
         tools:ignore="TextSizeCheck">
 
     </EditText>
 
     <TextView
-        android:id="@+id/getHelp"
-        style="@style/TEXT"
+        android:id="@+id/forgot"
+        style="@style/signup"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="40dp"
-        android:text="Forgot your login details?"
+        android:text="@string/forgot_your_login_details"
         android:textSize="12dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.291"
@@ -59,21 +58,22 @@
         tools:ignore="TextSizeCheck" />
 
     <TextView
+        android:id="@+id/facebook"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="24dp"
-        android:text="login with facebook"
+        android:text="@string/login_with_facebook"
         android:textColor="#1F4CEF"
         android:textSize="15dp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.51"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView3"
+        app:layout_constraintTop_toBottomOf="@+id/OR"
         tools:ignore="TextSizeCheck" />
 
     <View
-        android:id="@+id/divider4"
+        android:id="@+id/orLeft"
         android:layout_width="140dp"
         android:layout_height="4dp"
         android:layout_marginTop="36dp"
@@ -84,7 +84,7 @@
         app:layout_constraintTop_toBottomOf="@+id/helper" />
 
     <View
-        android:id="@+id/divider5"
+        android:id="@+id/orRight"
         android:layout_width="140dp"
         android:layout_height="4dp"
         android:layout_marginTop="36dp"
@@ -92,7 +92,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.162"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/getHelp" />
+        app:layout_constraintTop_toBottomOf="@+id/forgot" />
 
     <EditText
         android:id="@+id/Password"
@@ -103,7 +103,7 @@
         android:background="@drawable/roundstyle"
         android:backgroundTint="#232323"
         android:ems="10"
-        android:hint="Password"
+        android:hint="@string/password"
         android:inputType="textPassword"
         android:padding="10dp"
         android:textColor="#FFF"
@@ -111,34 +111,34 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.508"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName"
+        app:layout_constraintTop_toBottomOf="@+id/username"
         tools:ignore="TextSizeCheck" />
 
     <TextView
         android:id="@+id/helper"
-        style="@style/TEXT"
+        style="@style/signup"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="12dp"
         android:layout_marginTop="40dp"
-        android:text="Get help logging in"
+        android:text="@string/get_help_logging_in"
         android:textSize="12dp"
         android:textStyle="bold"
-        app:layout_constraintStart_toEndOf="@id/getHelp"
+        app:layout_constraintStart_toEndOf="@id/forgot"
         app:layout_constraintTop_toBottomOf="@id/Login"
         tools:ignore="TextSizeCheck" />
 
     <TextView
-        android:id="@+id/textView3"
+        android:id="@+id/OR"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="24dp"
-        android:text="OR"
+        android:text="@string/or"
         android:textSize="18dp"
-        app:layout_constraintEnd_toStartOf="@+id/divider4"
+        app:layout_constraintEnd_toStartOf="@+id/orLeft"
         app:layout_constraintHorizontal_bias="0.59"
-        app:layout_constraintStart_toEndOf="@+id/divider5"
-        app:layout_constraintTop_toBottomOf="@+id/getHelp">
+        app:layout_constraintStart_toEndOf="@+id/orRight"
+        app:layout_constraintTop_toBottomOf="@+id/forgot">
 
     </TextView>
 
@@ -150,14 +150,14 @@
         android:layout_marginTop="12dp"
         android:background="@drawable/roundstyle"
         android:backgroundTint="#1E2B6A"
-        android:text="Log in"
+        android:text="@string/log_in"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.524"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/Password" />
 
     <View
-        android:id="@+id/divider3"
+        android:id="@+id/bottomDivider"
         android:layout_width="match_parent"
         android:layout_height="4dp"
         android:layout_marginStart="4dp"
@@ -168,25 +168,25 @@
 
     <TextView
         android:id="@+id/noAcc"
-        style="@style/TEXT"
+        style="@style/signup"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
-        android:text="Don't have an account?"
+        android:text="@string/don_t_have_an_account"
         android:layout_marginLeft="100dp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/divider3" />
+        app:layout_constraintTop_toBottomOf="@id/bottomDivider" />
 
     <TextView
-        style="@style/TEXT"
+        style="@style/signup"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
-        android:text="Sign up"
+        android:text="@string/sign_up"
         android:layout_marginLeft="5dp"
         android:textStyle="bold"
         app:layout_constraintStart_toEndOf="@id/noAcc"
-        app:layout_constraintTop_toBottomOf="@id/divider3" />
+        app:layout_constraintTop_toBottomOf="@id/bottomDivider" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
