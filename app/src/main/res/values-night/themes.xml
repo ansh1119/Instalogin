@@ -33,4 +33,8 @@
         <item name="background"> @drawable/roundstyle</item>
         <item name="backgroundTint">#353535</item>
     </style>
+
+    <style name="TEXT">
+        <item name="android:textColor">@drawable/bg</item>
+    </style>
 </resources>
