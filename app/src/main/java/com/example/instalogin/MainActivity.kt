@@ -15,7 +15,6 @@ class MainActivity : AppCompatActivity() {
         x.setOnClickListener{
             Toast.makeText(this,"Loggin in",Toast.LENGTH_SHORT).show()
             intent=Intent(this,afterlogin::class.java)
-            startActivity(intent)
-        }
+            startActivity(intent)}
     }
 }

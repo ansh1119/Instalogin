@@ -34,5 +34,13 @@
         <item name="backgroundTint">#E3E1E1</item>
     </style>
 
+    <style name="TEXT">
+        <item name="android:textColor">#000</item>
+    </style>
+
+    <style name="icon">
+        <item name="backgroundTint">#FFF</item>
+    </style>
+
 
 </resources>

@@ -1,24 +1,71 @@
 <?xml version="1.0" encoding="utf-8"?>
+
+
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".afterlogin"
-    android:background="@drawable/bg">
+    style="@style/SCREEN">
 
     <TextView
+        android:id="@+id/instaLogo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:fontFamily="@font/billabong"
+        android:text="Instagram"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        android:text="YOU HAVE LOGGED IN \t                  TO \n            INSTAGRAM"
-        android:textStyle="bold"
-        android:textSize="40dp">
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:textSize="40dp"
+        android:layout_marginTop="20dp"
+        style="@style/TEXT">
     </TextView>
 
+    <ImageButton
+        android:id="@+id/imageButton"
+        style="@style/icon"
+        android:layout_width="84dp"
+        android:layout_height="51dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginRight="4dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/chats"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
+    <ImageButton
+        android:layout_width="84dp"
+        android:layout_height="51dp"
+        android:layout_marginTop="16dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/cam"
+        app:layout_constraintEnd_toStartOf="@+id/imageButton"
+        app:layout_constraintTop_toTopOf="parent"
+        style="@style/icon"
+        android:layout_marginRight="-30dp"/>
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="410dp"
+        android:layout_height="242dp"
+        android:layout_marginTop="128dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/instaLogo"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <TextView
+        style="@style/TEXT"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="56dp"
+        android:layout_marginBottom="20dp"
+        android:text="nbamemes_official"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@id/imageView"
+        app:layout_constraintLeft_toLeftOf="parent">
+    </TextView>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
